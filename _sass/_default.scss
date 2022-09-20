@@ -31,18 +31,20 @@
   font-family: $sans-serif-font-family;
 }
 
-.header a:hover {
-  color:black;
-}
-
 .header-title a {
   font-size: 2rem;
   text-decoration: none;
   color: $link-color;
 }
+.header-title a:hover {
+  color:$dark-link-color;
+}
 
 .header-subtitle {
-  color: $gray-color;
+  color: $dark-gray-color;
+}
+.header-subtitle a:hover {
+  color:black;
 }
 
 /*
@@ -59,7 +61,7 @@
 }
 
 .menu-content a {
-  color: $gray-color;
+  color: $dark-gray-color;
   font-size: 1rem;
   padding-right: 10px;
 }
@@ -69,7 +71,7 @@
 }
 
 .social-icons a {
-  color: $gray-color;
+  color: $dark-gray-color;
   font-size: 1rem;
 }
 
