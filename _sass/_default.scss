@@ -41,6 +41,10 @@
   color: $body-color;
 }
 
+.header-title a:hover {
+  color:black;
+}
+
 .header-subtitle {
   color: $light-gray-color;
 }
