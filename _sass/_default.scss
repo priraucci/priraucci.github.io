@@ -32,21 +32,17 @@
 }
 
 .header a:hover {
-  color:$dark-link-color;
+  color:black;
 }
 
 .header-title a {
   font-size: 2rem;
   text-decoration: none;
-  color: $body-color;
-}
-
-.header-title a:hover {
-  color:black;
+  color: $link-color;
 }
 
 .header-subtitle {
-  color: $light-gray-color;
+  color: $gray-color;
 }
 
 /*
@@ -63,7 +59,7 @@
 }
 
 .menu-content a {
-  color: $light-gray-color;
+  color: $gray-color;
   font-size: 1rem;
   padding-right: 10px;
 }
@@ -73,7 +69,7 @@
 }
 
 .social-icons a {
-  color: $light-gray-color;
+  color: $gray-color;
   font-size: 1rem;
 }
 
