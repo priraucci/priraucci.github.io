@@ -34,17 +34,14 @@
 .header-title a {
   font-size: 2rem;
   text-decoration: none;
-  color: $link-color;
+  color: $dark-link-color;
 }
 .header-title a:hover {
-  color:$dark-link-color;
+  color:$link-color;
 }
 
 .header-subtitle {
   color: $dark-gray-color;
-}
-.header-subtitle a:hover {
-  color:black;
 }
 
 /*
