@@ -33,12 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $dark-link-color;
+  color: $link-color;
 }
 
 a:hover {
   text-decoration: underline;
-  color: $link-color;
+  color: $light-link-color;
   border-bottom: none;
 }
 
