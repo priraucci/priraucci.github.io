@@ -34,10 +34,10 @@
 .header-title a {
   font-size: 2rem;
   text-decoration: none;
-  color: $dark-link-color;
+  color: $link-color;
 }
 .header-title a:hover {
-  color:$link-color;
+  color:$light-link-color;
 }
 
 .header-subtitle {
