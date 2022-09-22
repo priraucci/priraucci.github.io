@@ -34,7 +34,7 @@
 
 .fa-telegram {
   padding: 5px;
-  @include social-media-icon(black, $icon-transition-time);
+  @include social-media-icon($telegram-color, $icon-transition-time);
 }
 
 .fa-github {
