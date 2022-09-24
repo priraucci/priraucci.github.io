@@ -5,26 +5,29 @@
     <div class="container">
       {% include header.html %}
       
-      {% if page.profile -%}
+      <div>
+        {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-              {% include figure.html 
-              path=profile_image_path 
-              class="img-fluid z-dept-1 rounded"
-              alt=page.profile.image -%}
+                {% include figure.html 
+                path=profile_image_path 
+                class="img-fluid z-dept-1 rounded"
+                alt=page.profile.image -%}
             {% endif -%}
             {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
+              <div class="address">
+                {{ page.profile.address }}
+              </div>
             {%- endif %}
           </div>
-          {%- endif %}
-      
-      <div class="content-container">
-        {{ content }}
+          
+        {%- endif %}
+          <div style="padding: 70px 5" class="content-container">
+            {{ content }}
+           </div>
       </div>
+ 
       {% include footer.html %}
     </div>
   </body>
