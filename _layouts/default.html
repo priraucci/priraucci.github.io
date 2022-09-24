@@ -7,21 +7,11 @@
       
       <div>
         {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-                {% include figure.html 
-                path=profile_image_path 
-                class="img-fluid z-dept-1 rounded"
-                alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-              <div class="address">
-                {{ page.profile.address }}
-              </div>
-            {%- endif %}
-          </div>
-          
+          {% if page.profile.image -%}
+            <div style="float: left;">
+              <img src="{{ site.github.url }}/assets/img/{{ page.profile.image }}" width="350" hspace="20" vspace="20">
+            </div>
+          {%- endif %}
         {%- endif %}
           <div style="padding: 70px 5" class="content-container">
             {{ content }}
